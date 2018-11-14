@@ -1,0 +1,34 @@
+{
+  "campaigns": [
+    {
+      "id": 1,
+      "title": "Spring Ford 2019 Flag Football",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim velit, facilisis vestibulum pretium vel, lobortis id nulla. Duis id malesuada libero, molestie finibus magna.",
+      "startDate": "2018-11-14T03:24:03.405Z",
+      "endDate": "2018-11-14T03:24:03.405Z",
+      "campaignItems": [
+        {
+          "id": 1,
+          "name": "Helmets",
+          "description": "Maecenas vel varius lorem. Cras nec arcu tortor. Etiam ac enim eget sapien fringilla porta. Duis lobortis lacinia mi pretium tempor. ",
+          "cost": 10000,
+          "donors": 30
+        },
+        {
+          "id": 2,
+          "name": "Jerseys",
+          "description": "Nunc eu est eleifend, consectetur dolor vel, laoreet libero. Quisque euismod facilisis placerat.",
+          "cost": 2000,
+          "donors": 16
+        },
+        {
+          "id": 3,
+          "name": "Cones",
+          "description": "consectetur dolor vel, laoreet libero. Quisque euismod facilisis placerat.",
+          "cost": 300,
+          "donors": 15
+        }
+      ]
+    }
+  ]
+}
