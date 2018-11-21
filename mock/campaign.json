@@ -12,14 +12,14 @@
           "name": "Helmets",
           "description": "Maecenas vel varius lorem. Cras nec arcu tortor. Etiam ac enim eget sapien fringilla porta. Duis lobortis lacinia mi pretium tempor. ",
           "cost": 10000,
-          "donors": 30
+          "donors": 32
         },
         {
           "id": 2,
           "name": "Jerseys",
           "description": "Nunc eu est eleifend, consectetur dolor vel, laoreet libero. Quisque euismod facilisis placerat.",
           "cost": 2000,
-          "donors": 17
+          "donors": 21
         },
         {
           "id": 3,

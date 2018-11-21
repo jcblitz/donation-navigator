@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DonationAction from '../Components/DonationAction';
 import SupportList from '../Components/SupportList';
+import Constants from '../Components/Constants'
 
 class Campaign extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Campaign extends Component {
 
     item.donors++;    
 
-    fetch('http://localhost:8000/campaigns/1', {
+    fetch(Constants.api.campaign.put(1), {
         method: 'PUT',
         body: JSON.stringify(campaign),
         headers: {
@@ -32,7 +33,7 @@ class Campaign extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8000/campaigns/1').then(results => {
+    fetch(Constants.api.campaign.get(1)).then(results => {
         return results.json();
     }).then(data => {
         this.setState({campaign: data})        
