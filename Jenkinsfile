@@ -25,6 +25,10 @@ pipeline {
                 }
             }
         }
+        stage('Package') {
+            sh 'yarn build'
+            sh 'cd build; zip -r deploy.zip .'
+        }
         stage('Deploy') {
             steps {
                 echo 'doing deploy stuff'
@@ -33,6 +37,7 @@ pipeline {
     }
     post {
         always {
+            archiveArtifacts artifacts: 'build/deploy.zip', fingerprint: true
             junit 'output/coverage/junit/junit.xml'
         }
       }
