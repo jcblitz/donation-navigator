@@ -19,7 +19,15 @@
     "coverageReporters": [
       "text",
       "cobertura"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
     ]
+  },
+  "jest-junit": {
+    "output": "output/coverage/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +45,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
     "react-test-renderer": "^16.6.3",
     "regenerator-runtime": "^0.13.1"
   }

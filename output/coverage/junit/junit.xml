@@ -1,0 +1,8 @@
+<testsuites name="jest tests" tests="2" failures="0" time="0.899">
+  <testsuite name="/src/Components/Constants.test.js" errors="0" failures="0" skipped="0" timestamp="2018-12-01T03:00:03" time="0.297" tests="2">
+    <testcase classname=" API URL is set" name=" API URL is set" time="0.002">
+    </testcase>
+    <testcase classname=" all results should be at the index" name=" all results should be at the index" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
