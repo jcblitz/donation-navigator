@@ -26,8 +26,12 @@ pipeline {
             }
         }
         stage('Package') {
-            sh 'yarn build'
-            sh 'cd build; zip -r deploy.zip .'
+            steps {
+                echo 'doing package stuff'
+                sh 'yarn build'
+                sh 'cd build; zip -r deploy.zip .'
+            }
+            
         }
         stage('Deploy') {
             steps {
