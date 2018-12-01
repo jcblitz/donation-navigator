@@ -16,7 +16,13 @@ class Campaign extends Component {
     const campaign = updatedState.campaign;
     const item = campaign.campaignItems.find(item => item.id === itemId);
 
-    item.donors++;    
+    //TODO take in actual amount and the signed in user
+    item.donors.push({
+      "user_id": {
+        "$oid": "5c01b13dfc13ae570d000000"
+      },
+      "amount": 20
+    });
 
     fetch(Constants.api.campaign.put(1), {
         method: 'PUT',

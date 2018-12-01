@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class DonationAction extends Component {  
   totalDonated = () => {    
     if(this.props.campaign.id) {    
-      return (this.props.campaign.campaignItems.reduce((sum, item) => sum + item.donors, 0));
+      return (this.props.campaign.campaignItems.reduce((sum, item) => sum + (item.donors ? item.donors.length : 0), 0));
     }
   }
 

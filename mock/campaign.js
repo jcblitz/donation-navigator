@@ -12,21 +12,97 @@ const campaign = {
                     name: "Helmets",
                     description: "Maecenas vel varius lorem. Cras nec arcu tortor. Etiam ac enim eget sapien fringilla porta. Duis lobortis lacinia mi pretium tempor. ",
                     cost: 10000,
-                    donors: 10
+                    donors: [
+                        {
+                            "user_id": {
+                              "$oid": "5c01b13dfc13ae570d000000"
+                            },
+                            "amount": 902
+                          }, {
+                            "user_id": {
+                              "$oid": "5c01b13dfc13ae570d000001"
+                            },
+                            "amount": 926
+                          }, {
+                            "user_id": {
+                              "$oid": "5c01b13dfc13ae570d000002"
+                            },
+                            "amount": 647
+                          }, {
+                            "user_id": {
+                              "$oid": "5c01b13dfc13ae570d000003"
+                            },
+                            "amount": 1864
+                          }, {
+                            "user_id": {
+                              "$oid": "5c01b13dfc13ae570d000004"
+                            },
+                            "amount": 1836
+                          }
+                    ]
                 },
                 {
                   id: 2,
                   name: "Jerseys",
                   description: "Nunc eu est eleifend, consectetur dolor vel, laoreet libero. Quisque euismod facilisis placerat.",
                   cost: 2000,
-                  donors: 3
+                  donors: [
+                    {
+                        "user_id": {
+                          "$oid": "5c01b13dfc13ae570d000005"
+                        },
+                        "amount": 118
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13dfc13ae570d000006"
+                        },
+                        "amount": 1459
+                      }
+                  ]
                 },
                 {
                   id: 3,
                   name: "Cones",
                   description: "consectetur dolor vel, laoreet libero. Quisque euismod facilisis placerat.",
                   cost: 300,
-                  donors: 2
+                  donors: [
+                    {
+                        "user_id": {
+                          "$oid": "5c01b13dfc13ae570d000007"
+                        },
+                        "amount": 358
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13dfc13ae570d000008"
+                        },
+                        "amount": 236
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13efc13ae570d000009"
+                        },
+                        "amount": 1633
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13efc13ae570d00000a"
+                        },
+                        "amount": 216
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13efc13ae570d00000b"
+                        },
+                        "amount": 731
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13efc13ae570d00000c"
+                        },
+                        "amount": 763
+                      }, {
+                        "user_id": {
+                          "$oid": "5c01b13efc13ae570d00000d"
+                        },
+                        "amount": 120
+                      }
+                  ]
                 }
             ]
         }
