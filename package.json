@@ -11,8 +11,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --watchAll",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest",
+    "test-watch": "jest --watchAll",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
