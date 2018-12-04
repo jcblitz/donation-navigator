@@ -48,6 +48,18 @@
                 "$oid": "5c01b13dfc13ae570d000000"
               },
               "amount": 20
+            },
+            {
+              "user_id": {
+                "$oid": "5c01b13dfc13ae570d000000"
+              },
+              "amount": 20
+            },
+            {
+              "user_id": {
+                "$oid": "5c01b13dfc13ae570d000000"
+              },
+              "amount": 20
             }
           ]
         },
@@ -68,6 +80,18 @@
                 "$oid": "5c01b13dfc13ae570d000006"
               },
               "amount": 1459
+            },
+            {
+              "user_id": {
+                "$oid": "5c01b13dfc13ae570d000000"
+              },
+              "amount": 20
+            },
+            {
+              "user_id": {
+                "$oid": "5c01b13dfc13ae570d000000"
+              },
+              "amount": 20
             },
             {
               "user_id": {
@@ -124,6 +148,12 @@
                 "$oid": "5c01b13efc13ae570d00000d"
               },
               "amount": 120
+            },
+            {
+              "user_id": {
+                "$oid": "5c01b13dfc13ae570d000000"
+              },
+              "amount": 20
             },
             {
               "user_id": {

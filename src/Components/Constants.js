@@ -2,7 +2,7 @@
 
 var _internal = {
     baseUrls: {
-        app: 'http://localhost:8000'
+        app: 'https://donation-navigator-backend.herokuapp.com'
     }
 }
 var constants = {
