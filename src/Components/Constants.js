@@ -1,7 +1,7 @@
 //TODO this is a very redundent way to do this.
 
-//const baseUrl = 'https://donation-navigator-backend.herokuapp.com';
-const baseUrl = 'http://localhost:8000';
+const baseUrl = 'https://donation-navigator-backend.herokuapp.com';
+//const baseUrl = 'http://localhost:8000';
 
 var _internal = {
     baseUrls: {
