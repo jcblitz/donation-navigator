@@ -15,3 +15,12 @@ The mock data is in the `mock/` directory. Run this command from that directory 
 ```
 $ json-server --watch campaign.json --port 8000
 ```
+
+### Production
+
+There is a production deployment of the mock server on heroku: https://donation-navigator-backend.herokuapp.com
+
+Production builds are configured via https://www.netlify.com
+
+Production URL:
+https://donation-navigator.netlify.com/
