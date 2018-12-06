@@ -21,7 +21,7 @@ class Campaign extends Component {
       "user_id": {
         "$oid": "5c01b13dfc13ae570d000000"
       },
-      "amount": 20
+      "amount": Math.floor(Math.random() * Math.floor(1000))
     });
 
     fetch(Constants.api.campaign.put(1), {

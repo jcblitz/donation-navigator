@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 
-class DonationAction extends Component {  
-  totalDonated = () => {    
+class DonationAction extends Component {
+  totalDonated = () => {
     if(this.props.campaign.id) {    
       return (this.props.campaign.campaignItems.reduce((sum, item) => sum + (item.donors ? item.donors.length : 0), 0));
     }
+  }
+
+
+  totalAmountDontated = () => {
+    let total = 0  
+    if(this.props.campaign.id) {
+      this.props.campaign.campaignItems.forEach(item => {
+        item.donors.forEach(donation => {
+          total = donation.amount + total
+        });
+      });
+    }
+    return total;
   }
 
   render() {
@@ -17,6 +30,11 @@ class DonationAction extends Component {
             <a href="/" className="btn btn-secondary my-2">Secondary action</a>
           </p>
             <h2>Total Pledges: {this.totalDonated()}  </h2>
+            <h2>Total Pledged: {new Intl.NumberFormat('en-US', { 
+                  style: 'currency', 
+                  currency: 'USD' 
+              }).format(this.totalAmountDontated())}
+            </h2>
         </div>
     );
   }
